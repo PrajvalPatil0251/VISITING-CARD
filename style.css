@@ -1,5 +1,5 @@
 :root {
-  --accent: #f4c430;      /* yellow default */
+  --accent: #f4c430;     
   --accent-dark: #d9a600;
   --card-bg: #1c1c1c;
   --card-bg-2: #262626;
@@ -34,7 +34,7 @@ body {
   perspective: 1500px;
 }
 
-/* ---------- CARD ---------- */
+
 .card {
   position: relative;
   width: 300px;
@@ -44,7 +44,7 @@ body {
   color: #fff;
 }
 
-/* the inner wrapper is what actually rotates */
+
 .card-inner {
   position: relative;
   width: 100%;
@@ -58,7 +58,7 @@ body {
   transform: rotateY(180deg);
 }
 
-/* each face sits full-size, stacked on top of each other */
+
 .card-face {
   position: absolute;
   inset: 0;
@@ -73,8 +73,7 @@ body {
   transform: rotateY(0deg);
 }
 
-/* pre-rotated so that after the whole card-inner flips 180deg,
-   this face lands right-side-up (not mirrored) facing the viewer */
+
 .card-back {
   transform: rotateY(180deg);
   display: flex;
@@ -82,7 +81,7 @@ body {
   justify-content: center;
 }
 
-/* curved accent ring behind the photo, like a "C" bracket */
+
 .accent-ring {
   position: absolute;
   top: 26px;
@@ -98,7 +97,7 @@ body {
   stroke-width: 10;
   stroke-linecap: round;
   stroke-dasharray: 430;
-  stroke-dashoffset: 90; /* leaves a gap, like a C shape */
+  stroke-dashoffset: 90; 
   transition: stroke 0.4s ease;
 }
 
@@ -214,7 +213,7 @@ body {
   flex-shrink: 0;
 }
 
-/* ---------- CONTROLS ---------- */
+
 .controls {
   margin-top: 34px;
   display: flex;
