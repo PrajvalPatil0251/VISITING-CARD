@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>visiting-card</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1 class="page-title">visiting-card</h1>
+
+  <div class="stage">
+
+    <!-- CARD -->
+    <div class="card" id="card">
+      <div class="card-inner">
+
+        <!-- FRONT FACE -->
+        <div class="card-face card-front">
+          <svg class="accent-ring" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="88" />
+          </svg>
+
+          <div class="photo-hole">
+            <img id="photo" src="C:\Users\Dilip\Desktop\New folder\visiting-card\Ronaldo-Pfp-For-Discord-1.webp" alt="Profile photo">
+          </div>
+
+          <div class="card-body">
+            <p class="brand">
+              <span class="brand-dot"></span>REZCORE<span class="brand-light">PVT</span>
+            </p>
+            <p class="tagline">NEW ERA</p>
+
+            <hr class="divider">
+
+            <h2 class="person-name">PRAJVAL <span>PATIL</span></h2>
+            <p class="person-role">WEB DEVLOPER</p>
+
+            <ul class="contact-list">
+              <li><span class="icon">📞</span> (000) 1234 567890</li>
+              <li><span class="icon">✉️</span> DILIPKPATIL0251@Gmail.com</li>
+              <li><span class="icon">🌐</span> https://www.linkedin.com/in/prajval-patil-a906b7357/</li>
+        
+            </ul>
+          </div>
+        </div>
+
+        <!-- BACK FACE -->
+        <div class="card-face card-back">
+          <svg class="accent-ring accent-ring-back" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="88" />
+          </svg>
+          <div class="back-content">
+            <p class="brand brand-back">
+              <span class="brand-dot"></span>REZCORE<span class="brand-light">PVT</span>
+            </p>
+            <p class="tagline">NEW ERA</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- color switcher controls -->
+  <div class="controls">
+    <span class="controls-label">Accent color:</span>
+    <button class="swatch swatch-yellow active" data-color="yellow" aria-label="Yellow"></button>
+    <button class="swatch swatch-blue" data-color="blue" aria-label="Blue"></button>
+    <button class="swatch swatch-green" data-color="green" aria-label="Green"></button>
+    <button class="flip-btn" id="flipBtn">Flip Card</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
