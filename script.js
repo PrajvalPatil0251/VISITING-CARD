@@ -13,10 +13,9 @@ swatches.forEach(swatch => {
   swatch.addEventListener('click', () => {
     const chosen = swatch.dataset.color;
 
-    // update CSS variable driving all accent-colored elements
     root.style.setProperty('--accent', colors[chosen].accent);
 
-    // toggle active state on swatches
+
     swatches.forEach(s => s.classList.remove('active'));
     swatch.classList.add('active');
   });
